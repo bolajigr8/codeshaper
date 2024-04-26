@@ -160,4 +160,16 @@
   .Sidebarsocial-icons {
     gap: 0 0.2rem;
   }
+  .sidebar-info {
+    bottom: 0;
+  }
+  .sidebar-help {
+    left: 60%;
+    h4 {
+      font-size: 0.7rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
 }
