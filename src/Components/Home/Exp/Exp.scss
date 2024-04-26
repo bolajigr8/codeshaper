@@ -1,0 +1,107 @@
+@import '../../../scss/variables';
+@import '../../../scss/resets';
+
+.exp-section {
+  background: $navy-blue;
+  color: $offWhite;
+}
+.exp-center {
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 7rem;
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  }
+}
+
+.expBox-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 2rem;
+  place-items: center;
+  margin-bottom: 5rem;
+  transition: $transition;
+
+  .exp-box {
+    background: black;
+    width: 21rem;
+    height: 19rem;
+    padding: 2rem;
+    border-radius: $radius;
+    transition: $transition;
+    position: relative;
+    h3 {
+      margin-top: 3rem;
+      font-size: 1rem;
+      max-width: 10rem;
+      text-transform: uppercase;
+    }
+    button {
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      margin-top: 3rem;
+      background: transparent;
+      border: none;
+      color: $offWhite;
+      text-transform: uppercase;
+      transition: $transition;
+      &:hover {
+        color: $blue;
+        cursor: pointer;
+      }
+    }
+    .shape {
+      position: absolute;
+      bottom: 18%;
+      right: 13%;
+      width: 6rem;
+      height: 5rem;
+      background: $blue;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 80% 99%, 20% 99%);
+    }
+    .inner-shape {
+      position: absolute;
+      bottom: 27%;
+      right: 23.5%;
+      z-index: 2;
+      width: 1.5rem;
+      height: 1.5rem;
+      background: black;
+      clip-path: polygon(0 0, 100% 0, 80% 99%, 20% 99%);
+    }
+  }
+}
+
+.line-container {
+  display: flex;
+  place-items: center;
+  height: 100px;
+
+  .line {
+    flex: 1;
+    height: 2px;
+    background-color: $mainBlack;
+  }
+  .text {
+    padding: 0 9px;
+    margin-top: -0.5rem;
+  }
+}
+.expBtn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .exp-btn {
+    border: 1px solid $blue;
+    color: $blue;
+    background: $navy-blue;
+    padding: 0.2rem;
+  }
+}

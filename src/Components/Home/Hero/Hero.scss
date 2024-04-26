@@ -1,0 +1,46 @@
+@import '../../../scss/variables';
+@import '../../../scss/resets';
+
+.hero {
+  min-height: calc(90vh - 5rem);
+  background: $mainBlack;
+  color: $offWhite;
+  .hero-center {
+    margin-top: 2rem;
+    padding-left: 3rem;
+    transition: $transition;
+  }
+  p {
+    text-transform: uppercase;
+    font-family: $font-PL;
+    letter-spacing: 0.15rem;
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 3rem;
+    max-width: 18rem;
+    margin-bottom: 3.5rem;
+    transition: $transition;
+  }
+  .hero-btn {
+    background: $blue;
+    border-color: $blue;
+    color: $offWhite;
+    padding: 0.9rem 0.8rem;
+    letter-spacing: 2px;
+    &:hover {
+      background: transparent;
+      // color: $blue;
+      border-color: $offWhite;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero-center {
+    padding-left: 5rem;
+    h1 {
+      max-width: 25rem;
+      line-height: 1.4;
+    }
+  }
+}

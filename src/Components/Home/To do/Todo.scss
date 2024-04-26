@@ -1,0 +1,72 @@
+@import '../../../scss/variables';
+@import '../../../scss/resets';
+
+.todo-center {
+  display: grid;
+  place-items: center;
+}
+.todo-qst {
+  // padding: 0 2rem;
+  margin-bottom: 4rem;
+  transition: $transition;
+  h1 {
+    text-transform: uppercase;
+    max-width: 22rem;
+    line-height: 1.3;
+  }
+
+  .todo-btns {
+    margin-top: 2rem;
+    .todo-btn {
+      border: none;
+      background: $offWhite;
+      padding: 0.4rem 0.5rem;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.todoInfo-container {
+  // padding: 0 2rem;
+  margin: 0 auto;
+  border-radius: $radius;
+  transition: $transition;
+  .todo-info {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    width: 20rem;
+    height: 17rem;
+    background: $offWhite;
+    box-shadow: $lightShadow;
+    h4 {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      color: $blue;
+      margin-top: 4rem;
+      margin-bottom: 0.1rem;
+    }
+    .cust {
+      text-transform: uppercase;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .todoInfo-container {
+    display: flex;
+    gap: 0 2rem;
+    .todo-info {
+      height: 20rem;
+    }
+  }
+}
+@media screen and (min-width: 1170px) {
+  .todo-center {
+    display: flex;
+    transition: $transition;
+    gap: 0 2rem;
+  }
+}
