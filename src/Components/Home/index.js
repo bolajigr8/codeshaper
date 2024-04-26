@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from './Hero/Hero'
 import Exp from './Exp/Exp'
 import Market from './market/Market'

@@ -44,3 +44,11 @@
     }
   }
 }
+
+@media screen and (max-width: 485px) {
+  .hero {
+    .hero-center {
+      padding-left: 0.4rem;
+    }
+  }
+}
